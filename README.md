@@ -1,24 +1,22 @@
-## API 部分
+## Binge REST API
 
-### 接口说明
+### Quickstart
 
-第一个版本的 API 主要是下面这些内容
+### API reference
 
-### 目录说明
+### Source Code Structure
 
-API 目录下包括了所有的 API 相关代码。
+- controllers contains the controller code, which is responsible for handling the specific logic of the API.
 
-- controllers 目录下包含控制器代码，负责处理 API 的具体逻辑；
+- middleware contains middleware codes for functions such as authentication.
 
-- middleware 目录下包含中间件代码，用于实现认证等功能；
+- models contains model codes, which are used to define the database table structure and operation methods.
 
-- models 目录下包含模型代码，用于定义数据库表结构和操作方法；
+- routes contains routing code, which is used to define the interface path and request method of the API.
 
-- routes 目录下包含路由代码，用于定义 API 的接口路径和请求方法；
+- utils contains tools and methods related to database connection.
 
-- utils 目录下包含数据库连接相关的工具方法。
-
-### MongoDB
+### MongoDB Basic Structure
 
 ```mermaid
 flowchart LR
