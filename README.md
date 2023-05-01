@@ -4,37 +4,7 @@
 
 ### API reference
 
-- **auth.js**
-
-    #### Register
-
-    | Title | Version | Status | Uri | Method | Response data foramt |
-    |---|---|---|---|---|---|
-    | Register | v1.0 | Done | /register | POST | json |
-
-    #### Request
-
-    ##### Headers:
-
-    | Parameter | Required | Comment |
-    |---|---|---|
-    | Content-Type | Yes | Content-Type: application/json |
-    
-    #### Body
-    
-    | Parameter | Required | Comment |
-    |---|---|---|
-    | username | Yes | alphanumeric |
-    | password | Yes | alphanumeric characters |
-
-    #### Response
-
-    ##### data
-
-    | Key | Type | Required | Comment |
-    |---|---|---|---|
-    | status | int | Yes | 201 |
-    | message | string | Yes | Success, Failed |
+Check it on [Wiki](https://github.com/Binge/api/wiki)
 
 ### Source Code Structure
 
