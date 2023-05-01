@@ -22,6 +22,27 @@ API 目录下包括了所有的 API 相关代码。
 
 ```mermaid
 flowchart LR
-A[member] --> B[memberkey]
-A --> C[memberusername]
+A[member] --> B[crosskey]
+A --> C[username]
+A --> D[nickname]
+A --> E[password]
+A --> F[email]
+A --> G[ishold]
+A --> H[timezone]
+```
+
+```mermaid
+flowchart LR
+A[note] --> B[crosskey]
+A --> C[groupkey]
+A --> D[notekey]
+A --> E[content]
+A --> F[isonschedule]
+A --> G[scheduletime]
+A --> H[isrepeat]
+A --> I[repeatstyle]
+A --> J[priority]
+A --> K[type]
+A --> L[istrash]
+A --> M[isdone]
 ```
