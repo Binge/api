@@ -34,7 +34,7 @@ A --> H[timezone]
 ```mermaid
 flowchart LR
 A[note] --> B[crosskey]
-A --> C[groupkey]
+A --> C[taggroup]
 A --> D[notekey]
 A --> E[content]
 A --> F[isonschedule]
@@ -45,4 +45,13 @@ A --> J[priority]
 A --> K[type]
 A --> L[istrash]
 A --> M[isdone]
+F --> N[false:Default]
+F --> O[true]
+```
+
+```mermaid
+flowchart LR
+A[tag] --> B[tagkey]
+A --> C[tagname]
+A --> D[tagsort]
 ```
