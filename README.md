@@ -45,7 +45,7 @@ K --> O[2:BOOKMARK]
 K --> P[3:NOTE]
 M --> R[1:collect]
 M --> S[2:organize]
-N --> T[3:save]
+M --> T[3:save]
 ```
 
 ```mermaid
