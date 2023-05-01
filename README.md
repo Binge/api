@@ -18,39 +18,7 @@ Check it on [Wiki](https://github.com/Binge/api/wiki)
 
 - utils contains tools and methods related to database connection.
 
-### MongoDB Basic Structure
+### Community
 
-```mermaid
-flowchart LR
-A[member] --> B[crosskey]
-A --> C[username]
-A --> D[nickname]
-A --> E[password]
-A --> F[email]
-A --> G[ishold]
-A --> H[timezone]
-```
+Join [Discord channel](https://discord.gg/7Dc5FUuJgY) for requirement, issue and development.
 
-```mermaid
-flowchart LR
-A[note] --> B[crosskey]
-A --> C[taggroup]
-A --> D[notekey]
-A --> E[content]
-A --> K[type]
-A --> L[istrash]
-A --> M[status]
-K --> N[1:TODO]
-K --> O[2:BOOKMARK]
-K --> P[3:NOTE]
-M --> R[1:collect]
-M --> S[2:organize]
-M --> T[3:save]
-```
-
-```mermaid
-flowchart LR
-A[tag] --> B[tagkey]
-A --> C[tagname]
-A --> D[tagsort]
-```
