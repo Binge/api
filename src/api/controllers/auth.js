@@ -1,6 +1,7 @@
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const { v4: uuidv4 } = require('uuid');
 
 exports.register = async (ctx) => {
   const { username, password } = ctx.request.body;
@@ -14,10 +15,11 @@ exports.register = async (ctx) => {
   if (user) {
     ctx.throw(400, 'Username already exists');
   }
-
+  const crosskey = uuidv4();
   const hashedPassword = await bcrypt.hash(password, 10);
 
   const newUser = new User({
+    crosskey,
     username,
     password: hashedPassword
   });

@@ -1,10 +1,14 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-  username: {
+  crosskey: {
     type: String,
     required: true,
     unique: true
+  },
+  username: {
+    type: String,
+    required: true,
   },
   password: {
     type: String,
@@ -12,6 +16,6 @@ const userSchema = new mongoose.Schema({
   }
 });
 
-userSchema.index({ username: 1 }, { unique: true });
+userSchema.index({ crosskey: 1 }, { crosskey: true });
 
 module.exports = mongoose.model('User', userSchema);
